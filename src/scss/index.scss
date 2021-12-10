@@ -4,9 +4,9 @@
 @import 'variables';
 @import 'mixins';
 
-@import 'header.scss'; 
+@import 'header.scss';
 @import 'toolbar.scss';
-@import 'formula.scss'; 
+@import 'formula.scss';
 @import 'table.scss';
 
 * {
@@ -21,4 +21,7 @@ body {
 
 .excel {
   position: relative;
+  & > div {
+    border-bottom: 1px solid $grey-lighter;
+  }
 }

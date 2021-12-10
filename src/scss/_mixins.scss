@@ -1,12 +1,15 @@
 @mixin button() {
-  height: 24px;
-  min-width: 24px;
   padding: 3px;
   text-align: center;
-  position: relative;
+  // position: relative;
   display: inline-block;
   color: $grey-lighter;
   cursor: pointer;
+
+  & span {
+    height: 24px;
+    width: 24px;
+  }
 
   &:hover {
     color: $grey;
