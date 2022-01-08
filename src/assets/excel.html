@@ -1,0 +1,62 @@
+<div class="excel">
+  <div class="excel__header">
+    <input type="text" value="Новая таблица" class="input" />
+    <div class="controller">
+      <div class="button">
+        <span class="material-icons">delete</span>
+      </div>
+      <div class="button">
+        <span class="material-icons">home</span>
+      </div>
+    </div>
+  </div>
+  <div class="excel__toolbar">
+    <div class="button">
+      <span class="material-icons"> format_bold </span>
+    </div>
+    <div class="button">
+      <span class="material-icons"> format_italic </span>
+    </div>
+    <div class="button">
+      <span class="material-icons"> format_underlined </span>
+    </div>
+    <div class="button">
+      <span class="material-icons"> format_align_left </span>
+    </div>
+    <div class="button">
+      <span class="material-icons"> format_align_center </span>
+    </div>
+    <div class="button">
+      <span class="material-icons"> format_align_right </span>
+    </div>
+  </div>
+  <div class="excel__formula">
+    <div class="info">fx</div>
+    <div class="input" contenteditable spellcheck="false"></div>
+  </div>
+  <div class="excel__table">
+    <!-- < Headrow > -->
+    <div class="row">
+      <div class="row-info"></div>
+
+      <div class="row-data">
+        <div class="column">A</div>
+        <div class="column">B</div>
+        <div class="column">C</div>
+      </div>
+    </div>
+    <!-- </ Headrow > -->
+
+    <!-- < Tablerow > -->
+    <div class="row">
+      <div class="row-info">1</div>
+
+      <div class="row-data">
+        <div class="cell" contenteditable spellcheck="false">A1</div>
+        <div class="cell" contenteditable spellcheck="false">B1</div>
+        <div class="cell" contenteditable spellcheck="false">C1</div>
+      </div>
+    </div>
+    <!-- </ Tablerow > -->
+  </div>
+</div>
