@@ -2,5 +2,29 @@
 @import 'mixins';
 
 .excel__formula {
-  
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: $header-height + $toolbar-height;
+  height: $formula-height;
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  font-size: 18px;
+  font-style: italic;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid $border-controller;
+  text-align: center;
+  min-width: $info-cell-width;
+}
+
+.input {
+  padding: 4px;
+  outline: none;
+  font-size: 12px;
 }

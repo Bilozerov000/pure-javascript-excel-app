@@ -8,6 +8,7 @@
 @import 'toolbar.scss';
 @import 'formula.scss';
 @import 'table.scss';
+@import 'dashboard.scss'; 
 
 * {
   margin: 0;
@@ -17,11 +18,15 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: $grey;
 }
 
 .excel {
+  height: 100%;
+  max-width: 100%;
   position: relative;
+  color: $grey;
   & > div {
-    border-bottom: 1px solid $grey-lighter;
+    border-bottom: 1px solid $border-controller;
   }
 }

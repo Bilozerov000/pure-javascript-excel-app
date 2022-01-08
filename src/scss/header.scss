@@ -16,23 +16,26 @@
     margin: 0;
     padding: 4px 7px;
     color: $grey;
-    border: 1px solid $grey-lighter;
     height: 26px;
-    font-size: 16px;
+    border: 0 transparent;
+    font-size: 18px;
     font-weight: 300;
     line-height: 22px;
     outline: none;
     &:hover {
-      border-color: $grey;
+      border: 1px solid $grey-lighter;
       color: $grey-darker;
     }
     &:focus {
-      border-color: $grey-darker;
-      font-weight: 400;
+      border: 1px solid $grey-darker;
+      font-weight: 300;
       color: $grey-darker;
     }
   }
-  & .button {
-    @include button()
+  & .controller {
+    display: flex;
+    & .button {
+      @include button();
+    }
   }
 }

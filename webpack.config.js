@@ -52,11 +52,10 @@ module.exports = (env, { mode }) => {
       //   options: {},
       // }),
     ]
-    if (isProd) {
-      return base.filter(plugin => !plugin instanceof EsLintPlugin)
-    }
 
-    return base
+    return isProd
+      ? base.filter(plugin => !plugin instanceof EsLintPlugin)
+      : base
   }
 
   return {
